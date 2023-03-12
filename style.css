@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #FFFFFF;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.red {
+    color: #FB5805;
+}
+
+
+
+/* Header */
+header{
+    background-color: #262727;
+    padding: 1.5rem 0rem;
+}
+
+header h2 {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: #8D8C8D;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #FFFFFF;
+}
+
+nav ul li a.active {
+    color: #FFFFFF;
+}
+
+.header-content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-content h1{
+    color: #FFFFFF;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.header-content p {
+    color: #8D8C8D;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.header-content-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    justify-content: center;
+}
+
+
+
+/* Hero */
+.hero {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1rem;
+    color: #939393;
+}
+
+
+
+/* Agents */
+.agents {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(32%, 1fr));
+    grid-gap: 1rem;
+    margin-top: 2rem;
+}
+
+.agents > * {
+    border: 1px #F0F1F1 solid;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.agents-agent-content h3 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.agents-agent-content p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #939393;
+}
+
+.agents-agent-content a {
+    background-color: #FB5805;
+    display: block;
+    margin-top: 1rem;
+    text-decoration: none;
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.agents-agent-content a:hover {
+    background-color: #FB7530;
+}
+
+.agents-agent-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.agents-agent-content span {
+    background-color: #FED0B9;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: #FB7530;
+    font-weight: 400;
+    font-size: 0.8rem;
+    display: inline-block;
+}
