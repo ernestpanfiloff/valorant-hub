@@ -176,3 +176,14 @@ nav ul li a.active {
     font-size: 0.8rem;
     display: inline-block;
 }
+
+
+
+/* Footer */
+footer {
+    background-color: #262727;
+    padding: 2rem 0rem;
+    color: #FFFFFF;
+    margin-top: 4rem;
+    text-align: center;
+}
