@@ -133,6 +133,62 @@ nav ul li a.active {
     }
 }
 
+/* Maps */
+.maps {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(32%, 1fr));
+    grid-gap: 1rem;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 576px) {
+    .maps {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+}
+
+.maps>* {
+    border: 1px #F0F1F1 solid;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.maps-map-content h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.maps-map-content p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #939393;
+}
+
+.maps-map-content a {
+    background-color: #FB5805;
+    display: block;
+    margin-top: 1rem;
+    text-decoration: none;
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.maps-map-content a:hover {
+    background-color: #FB7530;
+}
+
+.maps-map-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
 
 /* Agents */
 .agents {
