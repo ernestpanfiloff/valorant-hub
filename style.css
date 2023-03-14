@@ -126,6 +126,12 @@ nav ul li a.active {
     margin-top: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+    .agents {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+}
+
 .agents > * {
     border: 1px #F0F1F1 solid;
     padding: 1rem;
@@ -187,3 +193,5 @@ footer {
     margin-top: 4rem;
     text-align: center;
 }
+
+
