@@ -30,6 +30,10 @@ header {
     padding: 1.5rem 0rem;
 }
 
+header a {
+    text-decoration: none;
+}
+
 header h2 {
     color: #FFFFFF;
     font-size: 2rem;
@@ -321,7 +325,6 @@ nav ul li a.active {
     font-weight: 500;
     text-align: center;
 }
-
 
 .HiddenPlayerTitles-Title h4 {
     margin-top: 3rem;
