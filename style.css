@@ -309,7 +309,7 @@ nav ul li a.active {
 
 .HiddenPlayerTitles>* {
     border: 1px #F0F1F1 dashed;
-    padding: 1rem 0.5rem;
+    padding: 1rem;
     border-radius: 0.5rem;
     display: flex;
     justify-content: center;
@@ -324,18 +324,16 @@ nav ul li a.active {
 
 
 .HiddenPlayerTitles-Title h4 {
-    margin-top: 2rem;
+    margin-top: 3rem;
     font-size: 1.5rem;
     font-weight: 500;
     color: #262727;
-    text-align: center;
 }
 
 .HiddenPlayerTitles-Title p {
     font-size: 0.8rem;
     font-weight: 300;
     color: #939393;
-    text-align: center;
 }
 
 
