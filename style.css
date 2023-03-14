@@ -14,7 +14,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 
 .red {
@@ -40,8 +40,6 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-
-/* Hide the navigation menu on small screens */
 @media screen and (max-width: 768px) {
     nav ul li{
         display: none;
@@ -132,8 +130,7 @@ nav ul li a.active {
     grid-gap: 1rem;
     margin-top: 2rem;
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
     .agents {
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     }
