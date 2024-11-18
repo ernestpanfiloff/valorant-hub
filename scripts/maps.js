@@ -11,8 +11,9 @@ window.addEventListener('load', function () {
 
 function displayMaps(response) {
     const maps = document.querySelector('.maps');
+    let mapsList = ""
     for (let i = 0; i < response.data.length; i++) {
-        maps.innerHTML += `
+        mapsList += `
             <div class="maps-map">
                 <div class="maps-map-content">
 
@@ -29,4 +30,5 @@ function displayMaps(response) {
             </div>
         `;
     }
+    maps.innerHTML = mapsList
 }

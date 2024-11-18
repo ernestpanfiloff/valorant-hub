@@ -11,8 +11,9 @@ window.addEventListener('load', function () {
 
 function displayAgents(response) {
     const agents = document.querySelector('.agents');
+    let agentList = ""
     for (let i = 0; i < response.data.length; i++) {
-        agents.innerHTML += `
+        agentList += `
             <div class="agents-agent">
                 <div class="agents-agent-content">
 
@@ -29,4 +30,5 @@ function displayAgents(response) {
             </div>
         `;
     }
+    agents.innerHTML = agentList
 }

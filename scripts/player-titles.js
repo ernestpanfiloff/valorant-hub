@@ -22,9 +22,10 @@ function displayPlayerTitles(response) {
 
 
     const PlayerTitles = document.querySelector('.PlayerTitles');
+    let playerTitlesList = ""
     for (let i = 0; i < response.data.length; i++) {
         if (response.data[i].isHiddenIfNotOwned == false) {
-            PlayerTitles.innerHTML += `
+            playerTitlesList += `
             <div class="PlayerTitles-title">
                 <div class="PlayerTitles-title-content">
 
@@ -35,12 +36,14 @@ function displayPlayerTitles(response) {
             </div>
         `;
         }
+        PlayerTitles.innerHTML = playerTitlesList
     }
 
 
     const HiddenPlayerTitles = document.querySelector('.HiddenPlayerTitles');
+    let hiddenPlayerTitlesList = ""
     for (let i = 0; i < hiddenTitles.length; i++) {
-        HiddenPlayerTitles.innerHTML += `
+        hiddenPlayerTitlesList += `
         <div class="HiddenPlayerTitles-title">
             <div class="HiddenPlayerTitles-title-content">
 
@@ -50,4 +53,5 @@ function displayPlayerTitles(response) {
         </div>
     `;
     }
+    HiddenPlayerTitles.innerHTML = hiddenPlayerTitlesList
 }
