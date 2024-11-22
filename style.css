@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    background-color: #09090b;
+}
+
+.red-text {
+    color: #dc2626;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 32px;
+}
+
+header {
+    background-color: #111111;
+    border-bottom: 1px solid #27272a;
+}
+
+.header-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fafafa;
+}
+
+#header-button {
+    background-color: #dc2626;
+    color: #fafafa;
+    border: none;
+    padding: 7px 15px;
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+
+#header-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #a1a1aa;
+    list-style: none;
+    gap: 1.5rem;
+    font-size: 0.90rem;
+
+}
+
+#header-hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    #header-menu {
+        display: none;
+    }
+
+    #header-hamburger {
+        width: 25px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5px
+    }
+
+    .header-hamburger-line {
+        width: 100%;
+        height: 1px;
+        background-color: #dc2626;
+    }
+}
