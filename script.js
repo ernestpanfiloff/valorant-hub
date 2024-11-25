@@ -26,3 +26,7 @@ for (let item of menuLinks) {
     `
 }
 
+// Website name
+let websiteName = "valHub"
+document.title += ` | ${websiteName}`
+document.getElementById("header-logo").textContent = websiteName
